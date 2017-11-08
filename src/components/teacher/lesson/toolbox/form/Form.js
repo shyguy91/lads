@@ -14,8 +14,12 @@ class Form extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        this.props.addElement(this.state.input);
-        this.props.toggleNew();
+        this.props.editContent(this.state.input, this.props.sectionIndex, this.props.contentIndex);
+        //this.props.toggleNew();
+    }
+
+    componentWillMount() {
+        this.setState({input: this.props.text});
     }
 
     render() {
