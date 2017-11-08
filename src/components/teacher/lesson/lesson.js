@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import '../style.css'
 import { Link } from 'react-router-dom'
 import Section from './section'
+import Toolbox from './toolbox/Toolbox'
 
 class Lesson extends Component {
     constructor(props) {
@@ -32,9 +33,55 @@ class Lesson extends Component {
                             type: "paragraph",
                             text: "props are stupid"
                         }]
-                }]
+                },
+                {
+                    header: "Props Vs State",
+                    contents: [
+                        {
+                            type: "paragraph",
+                            text: "states are great"
+                        },
+                        {
+                            type: "paragraph",
+                            text: "props are stupid"
+                        }]
+                },
+                {
+                    header: "Props Vs State",
+                    contents: [
+                        {
+                            type: "paragraph",
+                            text: "states are great"
+                        },
+                        {
+                            type: "paragraph",
+                            text: "props are stupid"
+                        }]
+                },
+                {
+                    header: "Props Vs State",
+                    contents: [
+                        {
+                            type: "paragraph",
+                            text: "states are great"
+                        },
+                        {
+                            type: "paragraph",
+                            text: "props are stupid"
+                        }]
+                }
+            ]
         }
     }
+
+    addSection(sectionIndex) {
+
+    }
+
+    addContent(sectionIndex, contentIndex) {
+        
+    }
+
     componentWillMount() {
         //reeive db stuff
     }
@@ -49,6 +96,7 @@ class Lesson extends Component {
                 <Link to='/lessons'>Back To Lessons</Link>
                 {displaySections}
 
+                <Toolbox />
             </div>
 
         )

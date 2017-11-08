@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import Lessons from './components/student/lessons/lessons'
-import Lesson from './components/student/lesson/lesson'
+import Lessons from './components/teacher/lessons/lessons'
+import Lesson from './components/teacher/lesson/lesson'
 
 import {BrowserRouter, Route, Redirect, Switch} from 'react-router-dom'
 
