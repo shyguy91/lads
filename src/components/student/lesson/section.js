@@ -1,53 +1,25 @@
-import React, {Component} from 'react';
-import  Paragraph from './elementTypes'
+import React, { Component } from 'react';
+import CustomElement from './elementTypes'
 
-class CustomElement extends Component {
+const Header = (props) => (<h2>{props.header}</h2>)
+
+class Section extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            type: "",
-            text: ""
+            contents: []
         }
     }
-    selectType(){
-        if (this.state.type === "paragraph"){
-            return <Paragraph>{this.props.content}</Paragraph>
-        }
-        // else if (this.state.type === "code"){
-        //     return <Code>{this.props.content}</Code>
-        // }
-    }
-
     render() {
-        return (
-            <div>
-                <em>{this.props.type}</em>
-                
-            </div>
-        )
-    }
-
-}
-class Section extends Component {
-    constructor(props){
-        super(props)
-        this.state = {
-            contents:[]
-        }
-    }
-    render(){
-       var displayContent = this.props.contents.map((content,index) => {
+        var displayContent = this.props.contents.map((content, index) => {
             return <CustomElement key={index} type={content.type} text={content.text}></CustomElement>
         })
         return (
-            
+
             <div>
-                <h1>{this.props.section.header}</h1>
+                <Header header={this.props.section.header} />
                 {displayContent}
-                {/* <em><p>{this.props.contents[0].type}</p></em>
-                <p>{this.props.contents[0].text}</p>
-               <em> <p>{this.props.contents[1].type}</p></em>
-                <p>{this.props.contents[1].text}</p> */}
+                <hr />
             </div>
         )
     }

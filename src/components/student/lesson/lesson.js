@@ -7,6 +7,7 @@ class Lesson extends Component {
     constructor(props) {
         super(props)
         this.state = {
+            title:"Lesson Title",
             sections: [
                 {
                     header: "OverView",
@@ -44,7 +45,7 @@ class Lesson extends Component {
         })
         return (
             <div>
-                <h1 className="test">Lesson </h1>
+                <h1 className="test">{this.state.title}</h1>
                 <Link to='/lessons'>Back To Lessons</Link>
                 {displaySections}
 
