@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Login from './components/login/Login.js';
 import './App.css';
-
 import Lessons from './components/teacher/lessons/lessons'
 import Lesson from './components/teacher/lesson/lesson'
 
@@ -23,10 +22,11 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p> */}
           <Switch>
+            <Route exact path="/login" component={Login} />
             <Route exact path="/lessons" component={Lessons} />
             {/* <Route exact path={`${this.props.match.path}/:number`}  component={Lesson} /> */}
             <Route exact path="/lesson" component={Lesson} />
-            <Redirect from="/" to="/lessons" />
+            <Redirect from="/" to="/login" />
           </Switch>
 
         </div>
