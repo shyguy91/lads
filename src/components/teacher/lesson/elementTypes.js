@@ -1,9 +1,9 @@
 import React,{Component} from 'react';
 import '../style.css'
 
-const Code = (props) => (<pre className={props.type}>Type:Code ||Text: {props.text}</pre>)
+const Code = (props) => (<code className={props.type}>{props.text}</code>)
 
-const Paragraph = (props) => (<p className={props.type}>Type: Paragraph || Text: {props.text}</p>)
+const Paragraph = (props) => (<p className={props.type}>{props.text}</p>)
 
 class CustomElement extends Component {
     // componentWillReceiveProps() {
@@ -19,7 +19,7 @@ class CustomElement extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="content-container">
                 {this.selectType()}
             </div>
         )

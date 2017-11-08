@@ -1,18 +1,25 @@
 .btn-group {
     position: fixed;
     /* height: 200px; */
-    top: 30%;
-    margin-left: 1%;  
+    top: 5%;
+    bottom:5%;
+    margin-left: 2%; 
+     
   }
   
   .btn-group button {
-    /* background-color: #4CAF50; Green background */
-    border: 1px solid black; /* Green border */
-    /* color: white; White text */
-    /* padding: 10px 24px; Some padding */
-    cursor: pointer; /* Pointer/hand icon */
-    width: 100%; /* Set a width if needed */
-    display: block; /* Make the buttons appear below each other */
+    margin-top:10%;
+    background-color: rgb(58, 102, 190); 
+    box-shadow:0 3px 25px 5px #807f7f ;
+    border: none; 
+    cursor: pointer; 
+    width: 60px; 
+    height:60px;
+    border-radius:50%;
+    display: block; 
+    transition-property: width,height;
+    transition-duration: .5s;
+    
   }
   
   .btn-group button:not(:last-child) {
@@ -21,7 +28,9 @@
   
   /* Add a background color on hover */
   .btn-group button:hover {
-    background-color: #999898;
+    background-color:rgb(81, 139, 255); 
+    width:70px;
+    height:70px;
   }
 
   .lesson-element{
