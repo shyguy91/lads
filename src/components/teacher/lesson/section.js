@@ -8,9 +8,9 @@ class Section extends Component {
         if(this.props.section.headerEditable) {
             return <Form text={this.props.section.header} editContent={this.props.editContent} sectionIndex={this.props.sectionIndex}/>
         }
-        return (<h2 onDoubleClick={()=>this.props.toggleEditing(this.props.sectionIndex)}>{this.props.section.header}</h2>)
+        return (<h2 className="header" onDoubleClick={()=>this.props.toggleEditing(this.props.sectionIndex)}>{this.props.section.header}</h2>)
     }
-    
+
     render() {
         var displayContent = this.props.contents.map((content, index) => {
             return <CustomElement key={index} editing={content.editable} 
@@ -20,7 +20,6 @@ class Section extends Component {
         })
         
         return (
-
             <div className='section'>
                 {this.header()}
                 {displayContent}
