@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Login from './components/login/Login.js';
 import './App.css';
 
 import Lessons from './components/teacher/lessons/lessons'
@@ -34,5 +34,4 @@ class App extends Component {
     );
   }
 }
-
-export default App;
+  export default App;
