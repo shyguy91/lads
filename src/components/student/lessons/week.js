@@ -16,10 +16,10 @@ class Week extends Component {
 
     render() {
         let days = Object.keys(this.props.week).map((days, index) => (
-            <Day key={index} index={index} week={this.props.week} text={days} days={this.props.week[days]} />))
+            <Day key={index} index={index} week={this.props.week} day={days} days={this.props.week[days]} />))
 
         return (
-            <div>
+            <div className="row">
 
                 <a onClick={this.onClick} href='#'><h1>{this.props.weekNumber}</h1></a>
                 <div>{this.state.showDays && days}</div>

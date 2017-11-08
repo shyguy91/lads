@@ -10,19 +10,19 @@ class Day extends Component {
 
     render() {
         // const {description,img,name,tempCelsius} = this.props.city;
-        console.log(this.props.text)
+        // console.log(this.props.text)
         let lesson = this.props.days.map((day, index) =>
             <div key={index}> {day.Topic}  </div>)
 
         return (
-            <div>
-                <li>
-               
-                </li>
-                
 
-                <h1>{this.props.text}</h1>
-            </div>
+
+                    <div className="col-xs-3">
+                        <h1>{this.props.day}</h1>
+                        </div>
+
+
+
         )
     }
 }

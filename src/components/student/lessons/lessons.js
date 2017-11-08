@@ -168,13 +168,11 @@ class Lessons extends Component {
         ))
         return (
             <div>
-                <div>
+
                     <h1>Lessons Component</h1>
                     <Link to="/lesson">Lesson</Link>
-                </div>
 
                 {week}
-
             </div>
         )
     }
