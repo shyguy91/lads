@@ -1,0 +1,21 @@
+.whiteboard-div {
+    background-image: url("http://hddfhm.com/images/clipart-white-board-18.png");
+    background-repeat: no-repeat;
+    background-size: 600px;
+    height: 700px;
+    width: 600px;
+    background-position: center; 
+    text-align: center;
+    line-height: 350px;
+    vertical-align: middle;
+    font-family: 'Just Another Hand', Helvetica, sans-serif;
+    font-size: 24px;
+    color: #2b2b2b;
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+    padding: 250px 50px 50px 50px;
+
+    background-position: center;
+}
+
+
+

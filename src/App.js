@@ -4,6 +4,7 @@ import './App.css';
 
 import Lessons from './components/student/lessons/lessons'
 import Lesson from './components/student/lesson/lesson'
+import Home from './components/student/home/home'
 
 import {BrowserRouter, Route, Redirect, Switch} from 'react-router-dom'
 
@@ -26,6 +27,7 @@ class App extends Component {
         <Route exact path="/lessons" component={Lessons}/>
         {/* <Route exact path={`${this.props.match.path}/:number`}  component={Lesson} /> */}
         <Route exact path="/lesson" component={Lesson} />
+        <Route exact path="/student/home" component={Home} />
         <Redirect from="/" to="/lessons" />
         </Switch>
 

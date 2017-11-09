@@ -1,0 +1,38 @@
+
+  
+  #marvelous{  
+    /* z-index:1; */
+  color:black;
+  
+    font-size:18px;
+    position:relative;
+    margin:auto;
+  font-family: 'Rubik', sans-serif;
+    -webkit-transition: all .5s ease;
+       -moz-transition: all .5s ease;
+         -o-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+            transition: all .5s ease;
+     /* line-height: 50px; */
+   text-align: left;
+   /* Starting position */
+
+   /* transform:translateY(0px); */
+   /* Apply animation to this element */	
+
+   animation: scroll-up 30s linear infinite;
+  
+  }
+  
+  @keyframes scroll-up {
+   0%   { 
+   transform: translateY(-2000px); 		
+   }
+   100% { 
+   transform: translateY(1000px); 
+   }
+  }
+
+  #marvelous div {
+      margin-top: 100px
+  }
