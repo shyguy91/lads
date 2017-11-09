@@ -1,17 +1,14 @@
-.btn-group {
-    position: fixed;
-    /* height: 200px; */
-    top: 10%;
-    bottom:5%;
-    margin-left: 2%; 
-     
-  }
-  
+.toolbox{
+  text-align: center;
+  position:fixed;
+  top:5%;
+  left:1%;
+}
   .btn-group button {
     margin-top:10%;
     background-color: rgb(58, 102, 190); 
     box-shadow:0 3px 25px 5px #807f7f ;
-    border: none; 
+    border: none;
     cursor: pointer; 
     width: 55px; 
     height:55px;
@@ -22,10 +19,6 @@
     
   }
   
-  .btn-group button:not(:last-child) {
-    border-bottom: none; /* Prevent double borders */
-  }
-  
   /* Add a background color on hover */
   .btn-group button:hover {
     background-color:rgb(81, 139, 255); 
@@ -34,14 +27,17 @@
   }
 
   .lesson-element{
-    border: 1px solid black;
-    width: 50%;
-    margin-left: 25%;
+    width: 140%;
+    margin-left: -125px;
   }
 
-  .toolbox{
-    text-align: center;
-    position:fixed;
-    /* top:7%;
-    left:0%; */
+  .fa{
+    color:rgba(245, 245, 245, 0.699)
+  }
+
+  input{
+  height: 40px;
+  width: 100%;
+  border-radius: 10px;
+  border-style: outset;
   }

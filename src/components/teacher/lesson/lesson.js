@@ -195,7 +195,7 @@ class Lesson extends Component {
         var displaySections = this.state.sections.map((section, index) => {
             return <Section key={index} section={section} contents={section.contents} sectionIndex={index} toggleEditing={this.toggleEditing} editContent={this.editContent}></Section>
         })
-        let formHtml = <Form toggleNew={this.toggleElementAdding} addElement={this.addSection}/>;
+        let formHtml = <Form className="lesson-element" toggleNew={this.toggleElementAdding} addElement={this.addSection}/>;
         let form = (this.state.elementAdding ? formHtml : '');
         return (
             <div>

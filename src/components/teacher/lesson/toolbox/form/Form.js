@@ -25,7 +25,7 @@ class Form extends Component {
     render() {
         return (
             <div className="header">
-                <form onSubmit={this.handleSubmit}>
+                <form className="lesson-element" onSubmit={this.handleSubmit}>
                     <input type='text' placeholder='Add text here' value={this.state.input} onChange={this.handleChange}/>
                 </form>
             </div>
