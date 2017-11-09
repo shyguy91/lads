@@ -7,31 +7,31 @@ class Toolbox extends Component {
     constructor(props) {
         super(props);
         this.state = { 
-            elementAdding: false ,
-            currentButton: '',
-            lessonContent: []
+            //currentButton: ''
         }
         this.toggleElementAdding = this.toggleElementAdding.bind(this);
-        this.addLessonContent = this.addLessonContent.bind(this);
+ //       this.addLessonContent = this.addLessonContent.bind(this);
     }
 
     toggleElementAdding(buttonLabel) {
         this.setState({ elementAdding: !this.state.elementAdding});
         if(buttonLabel) {
-            this.setState({currentButton: buttonLabel.target.innerHTML});
+            this.props.toggleElementAdding(buttonLabel);
         }
     }
 
-    addLessonContent(newText) {
-        let newElement = {tag: this.state.currentButton, text: newText};
-        this.setState({lessonContent:this.state.lessonContent.concat(newElement)});
-        //this.setState((prevState)=>({lessonContent:prevState.lessonContent.concat(newElement)}))
-    }
+    // addLessonContent(newText) {
+    //     //let newElement = {tag: this.state.currentButton, text: newText};
+    //     //this.setState({lessonContent:this.state.lessonContent.concat(newElement)});
+    //     //this.setState((prevState)=>({lessonContent:prevState.lessonContent.concat(newElement)}))
+
+    //     this.props.addSection(newText);        
+    // }
 
     render() {
-    let formHtml = <Form toggleNew={this.toggleElementAdding} addElement={this.addLessonContent}/>;
-    let form = (this.state.elementAdding ? formHtml : '');
-    let lessonElements = this.state.lessonContent.map((item, index) => <div className='lesson-element' key={index}><item.tag>{item.text}</item.tag></div>)
+    // let formHtml = <Form toggleNew={this.toggleElementAdding} addElement={this.addLessonContent}/>;
+    // let form = (this.state.elementAdding ? formHtml : '');
+    //let lessonElements = this.state.lessonContent.map((item, index) => <div className='lesson-element' key={index}><item.tag>{item.text}</item.tag></div>)
 
         return (
             <div className="toolbox">
@@ -45,10 +45,10 @@ class Toolbox extends Component {
                     <Button label='a?' toggleNew={this.toggleElementAdding}/>
                     <Button label='show' toggleNew={this.toggleElementAdding}/>
                     <Button label='img' toggleNew={this.toggleElementAdding}/>
-                    <Button label='publish' toggleNew={this.toggleElementAdding}/>
+                    <Button label='pub' toggleNew={this.toggleElementAdding}/>
                 </div>
-                {lessonElements}
-                {form}
+                {/* {lessonElements} */}
+                {/* {form} */}
             </div>
         );
     }

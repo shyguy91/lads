@@ -1,0 +1,47 @@
+.btn-group {
+    position: fixed;
+    /* height: 200px; */
+    top: 10%;
+    bottom:5%;
+    margin-left: 2%; 
+     
+  }
+  
+  .btn-group button {
+    margin-top:10%;
+    background-color: rgb(58, 102, 190); 
+    box-shadow:0 3px 25px 5px #807f7f ;
+    border: none; 
+    cursor: pointer; 
+    width: 55px; 
+    height:55px;
+    border-radius:50%;
+    display: block; 
+    transition-property: width,height;
+    transition-duration: .5s;
+    
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color:rgb(81, 139, 255); 
+    width:65px;
+    height:65px;
+  }
+
+  .lesson-element{
+    border: 1px solid black;
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .toolbox{
+    text-align: center;
+    position:fixed;
+    /* top:7%;
+    left:0%; */
+  }

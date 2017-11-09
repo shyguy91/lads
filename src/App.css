@@ -1,28 +1,80 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
+.Login{
+  /* background-image: url("https://static.pexels.com/photos/265127/pexels-photo-265127.jpeg"); */
+  background-size: cover;
+  background-image: url("https://tatianadesigns.com/wp-content/uploads/2016/10/web-design-graphic-tatiana-designs.jpg");
+  width: 100%;
+  height: 826px;
+  padding-top: 200px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}  
+.loginBox {
+  background-color: rgba(255,255,255,.84);
+  width: 35%;
+  margin: auto;
+  height: 450px;
   padding: 20px;
-  color: white;
+  border-radius: 10px;
+  
 }
-
-.App-title {
-  font-size: 1.5em;
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Montserrat');
+.head-login{
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-size: 60px;
 }
-
-.App-intro {
-  font-size: large;
+.form-login {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
 }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.fa-envelope {
+  position: absolute; 
+  text-indent:9px;
+  margin-top:9px;
+  }
+.fa-lock{
+  position: absolute; 
+  text-indent:9px;
+  margin-top:3px;
+  }
+  .form-control {
+  text-indent:25px;
+  }
+  .btn-submit-div{
+    text-align: center;
+  }
+.btn-submit{
+  width: 70%;
+  height: 40px;
+  margin-top: 10px;
+}
+.otherConnections{
+  text-align: center;
+  margin-top: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+.fa-linkedin-square{
+  color: #6D6D9A
+}
+.fa-facebook-square{
+  color: blue
+}
+.fa-google-plus-square{
+  color: red
+}
+.fa-github-square{
+  color: black
+}
+.icons{
+  margin: 3px;
+  cursor: pointer;
+}
+.version{
+  margin-top: 50px;
+  font-size: 13px;
+  
 }
